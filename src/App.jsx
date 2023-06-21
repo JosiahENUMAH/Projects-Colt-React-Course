@@ -6,12 +6,18 @@ import DoubleDice from "./DoubleDice";
 import ShoppingList from "./ShoppingList/ShoppingList";
 import { data } from "./ShoppingList/data";
 import Property from "./Property/Property";
+import Clicker from "./Events/Clicker";
+import Form from "./Events/Form";
+import ClickerExercise from "./Events/ClickerExercise";
 
 function App() {
   return (
     <>
-      <ShoppingList items={data} />
-      <Property />
+      <ClickerExercise message="Fuck Off" buttonText="Please Click Me!" />
+      {/* <Form /> */}
+      {/* <Clicker /> */}
+      {/* <ShoppingList items={data} />
+      <Property /> */}
       {/* <Greeter person="Mike" from="Jaush" />
       <Greeter person="Kroos" from="Al Hilal" />
       <Greeter person="Lukaku" from="Al Ittihad" /> */}
