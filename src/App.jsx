@@ -6,14 +6,22 @@ import DoubleDice from "./DoubleDice";
 import ShoppingList from "./ShoppingList/ShoppingList";
 import { data } from "./ShoppingList/data";
 import Property from "./Property/Property";
-import Clicker from "./Events/Clicker";
+import Clicker from "./State/Clicker";
 import Form from "./Events/Form";
 import ClickerExercise from "./Events/ClickerExercise";
+import Toggler from "./State/Toggler/Toggler";
+import { ColorBox } from "./State/ColorBoxExercise/ColorBox/ColorBox";
+import { colorData } from "./State/ColorBoxExercise/ColorBox/colorData";
+import ColorBoxGrid from "./State/ColorBoxExercise/ColorBoxGrid/ColorBoxGrid";
 
 function App() {
   return (
     <>
-      <ClickerExercise message="Fuck Off" buttonText="Please Click Me!" />
+      <ColorBoxGrid />
+      {/* <ColorBox color={colorData} /> */}
+      {/* <Toggler /> */}
+      {/* <ClickerExercise message="Fuck Off" buttonText="Please Click Me!" />
+      <Clicker /> */}
       {/* <Form /> */}
       {/* <Clicker /> */}
       {/* <ShoppingList items={data} />
