@@ -13,11 +13,21 @@ import Toggler from "./State/Toggler/Toggler";
 import { ColorBox } from "./State/ColorBoxExercise/ColorBox/ColorBox";
 import { colorData } from "./State/ColorBoxExercise/ColorBox/colorData";
 import ColorBoxGrid from "./State/ColorBoxExercise/ColorBoxGrid/ColorBoxGrid";
+import { UpdaterFunction } from "./Intermediate State Concepts/UpdaterFunction";
+import Dumbo from "./Intermediate State Concepts/Dumbo";
+import ScoreKeeper from "./Intermediate State Concepts/ScoreKeeper";
+import { EmojiClicker } from "./Intermediate State Concepts/EmojiClicker";
+import GameScoreKeeper from "./Intermediate State Concepts/GameScoreKeeper";
 
 function App() {
   return (
     <>
-      <ColorBoxGrid />
+      <GameScoreKeeper numPlayers={50} target={3}/>
+      {/* <EmojiClicker/> */}
+      {/* <ScoreKeeper/> */}
+      {/* <Dumbo/> */}
+      {/* <UpdaterFunction/> */}
+      {/* <ColorBoxGrid /> */}
       {/* <ColorBox color={colorData} /> */}
       {/* <Toggler /> */}
       {/* <ClickerExercise message="Fuck Off" buttonText="Please Click Me!" />
